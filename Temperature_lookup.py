@@ -20,7 +20,7 @@ def Temperature_lookup(filter, lam, T_calc, fit, Thermo_calib, soot_coef):
                           .format('Temperature_tables\T_lookup_', soot_coef, '_', filter, '_lambda_', str(int(lam[0])), \
                           '_', str(int(lam[-1])), '_T_', str(int(T_calc[0])), '_', str(int(T_calc[-1])), '_fitted', '.csv'))
     elif fit == False:
-        filename_lookup = abspath( '{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}{12}{13}' \
+        filename_lookup = abspath( '{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}{10}{12}' \
                           .format('Temperature_tables\T_lookup_', soot_coef, '_', filter, '_lambda_', str(int(lam[0])), \
                           '_', str(int(lam[-1])), '_T_', str(int(T_calc[0])), '_', str(int(T_calc[-1])), '.csv'))
     
